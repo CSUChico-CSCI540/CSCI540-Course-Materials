@@ -123,7 +123,7 @@ You will not learn the material if you don't put in the time and effort required
 
 ##Honesty
 
-The first time you cheat, you will get a 0 on the test or assignment. The second time you cheat you will fail the class. It is not a good idea to cheat in my class. I will be following Tyson Henry's Cheating Policy until I put together one of my own.
+The first time you cheat, you will get a 0 on the test or assignment. The second time you cheat you will fail the class. It is not a good idea to cheat in my class. I will be following Tyson Henry's Cheating Policy:
 
 
 
