@@ -1,8 +1,3 @@
-{% extends "CSCI540_Fall2014/base.html" %}
-
-{% block Content %}
-<br>
-<br>
 <h2>Weekly Readings for CSCI640</h2>
 <br>
 <p>Students taking this course as CSCI640 will also need to read and answer
@@ -103,4 +98,3 @@ as CSCI540 and has all the other same assignments.</p>
 		<th align="left" width="400" valign="top"><a href="">Big Table Questions</a></th>
 	</tr>
 </table>
-{% endblock %}
