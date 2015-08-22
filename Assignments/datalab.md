@@ -39,222 +39,112 @@ Table 1 describes a set of functions that operate on the bit-level representatio
 |float_half(uf)| Computer f/2 | 4 | 30 |
 
 
-Table 1: Floating-Point Functions. Value
-f
-is the floating-point number having the same bit representation
-as the unsigned integer
-uf
-.
+Table 1: Floating-Point Functions. Value *f* is the floating-point number having the same bit representation as the unsigned integer *uf*.
 
-Functions
-float_neg
-and
-float_twice
-must handle the full range of possible argument values, in-
-cluding not-a-number (NaN) and infinity.   The IEEE standard does not specify precisely how to handle
-NaN’s, and the IA32 behavior is a bit obscure. We will follow a convention that for any function returning
-2
-a NaN value, it will return the one with bit representation
-0x7FC00000
-.
-The included program
-fshow
-helps you understand the structure of floating point numbers.  To compile
-fshow
-, switch to the handout directory and type:
-unix> make
-You can use
-fshow
-to see what an arbitrary pattern represents as a floating-point number:
-unix> ./fshow 2080374784
-Floating point value 2.658455992e+36
-Bit Representation 0x7c000000, sign = 0, exponent = f8, fraction = 000000
-Normalized.  1.0000000000 X 2ˆ(121)
-You can also give
-fshow
-hexadecimal and floating point values, and it will decipher their bit structure.
-5  Evaluation
-The assignment is scored in two parts - you will receive 60 percent of the overall score for having correctly
-functioning functions handed in on time and 40 percent for being able to correctly answer questions about
-how your functions work in the in class questions.
+Functions *float_abs* and *float_half* must handle the full range of possible argument values, including not-a-number (NaN) and infinity. The IEEE standard does not specify precisely how to handle NaN’s, and the IA32 behavior is a bit obscure. We will follow a convention that for any function returning a NaN value, it will return the one with bit representation 0x7FC00000.
+
+The included program *fshow* helps you understand the structure of floating point numbers.  To compile *fshow*, switch to the handout directory and type:
+<pre>
+	unix> make
+</pre>
+
+You can use *fshow* to see what an arbitrary pattern represents as a floating-point number:
+
+<pre>
+	unix> ./fshow 2080374784
+
+	Floating point value 2.658455992e+36
+	Bit Representation 0x7c000000, sign = 0, exponent = f8, fraction = 000000
+	Normalized.  1.0000000000 X 2ˆ(121)
+</pre>
+
+You can also give *fshow* hexadecimal and floating point values, and it will decipher their bit structure.
+
+##Evaluation
+This section only includes evaluation for the standard section, not the extra credit.
+
+The assignment is scored in two parts - you will receive 60 percent of the overall score for having correctly functioning functions handed in on time and 40 percent for being able to correctly answer questions about how your functions work either in a grading interview or in class questions. If the interview grading isn't used 100 percent of your grade will come from the correctness of your assignment.
+
 Your correctness score will be computed out of a maximum of 62 points based on the following distribution:
-34 of 62 points
-Correctness points (correct output)
-28 of 62 points
-Performance points (not exceeding the maximum operations)
-Correctness points.
-The 14 puzzles you must solve have been given a difficulty rating between 1 and 4, such
-that their weighted sum totals to 34.  We will evaluate your functions using the
-btest
-program, which is
-described in the next section.  You will get full credit for a puzzle if it passes all of the tests performed by
-btest
-, and no credit otherwise.
-Performance points.
-Our main concern at this point in the course is that you can get the right answer.
-However, we want to instill in you a sense of keeping things as short and simple as you can.  Furthermore,
-some of the puzzles can be solved by brute force, but we want you to be more clever. Thus, for each function
-we’ve established a maximum number of operators that you are allowed to use for each function. This limit
-is very generous and is designed only to catch egregiously inefficient solutions. You will receive two points
-for each correct function that satisfies the operator limit.
-Extra Credit
-You can receive up to 10% extra credit for this assignment by completing all of the floating point problems.
-You will have to read ahead to learn about floating point, because we’re going to cover it later; however,
-you’re going to have to learn it someday...
-3
-Autograding your work
-We have included some autograding tools in the handout directory —
-btest
-,
-dlc
-, and
-driver.pl
-—
-to help you check the correctness of your work.
-Note that the autograding script produces a report about ’points’ – this doesn’t align with what we’ve de-
-scribed above (which is what holds). This happens in part because of the presence of the extra problems.
+
+**34 of 62 points** Correctness points (correct output)
+**28 of 62 points** Performance points (not exceeding the maximum operations)
+
+*Correctness points.* The 14 puzzles you must solve have been given a difficulty rating between 1 and 4, such that their weighted sum totals to 34.  We will evaluate your functions using the *btest* program, which is described in the next section. You will get full credit for a puzzle if it passes all of the tests performed by *btest*, and no credit otherwise.
+
+*Performance points.* Our main concern at this point in the course is that you can get the right answer. However, we want to instill in you a sense of keeping things as short and simple as you can.  Furthermore, some of the puzzles can be solved by brute force, but we want you to be more clever. Thus, for each function we’ve established a maximum number of operators that you are allowed to use for each function. This limit is very generous and is designed only to catch egregiously inefficient solutions. You will receive two points for each correct function that satisfies the operator limit.
+
+###Extra Credit
+You can receive up to 10% extra credit for this assignment by completing all of the floating point problems. If you are unfamiliar with IEEE floating point encoding you'll need to read the sections of the book on it as I won't be covering it in lecture on the assumption you learned it in a previous course.
+
+
+###Autograding your work
+We have included some autograding tools in the handout directory — *btest*, *dlc*, and *driver.pl* — to help you check the correctness of your work.
+
+Note that the autograding script produces a report about ’points’ – this doesn’t align with what we’ve described above (which is what holds). This happens in part because of the presence of the extra problems.
 
-btest:
-This program checks the functional correctness of the functions in
-bits.c
-.  To build and
-use it, type the following two commands:
-unix> make
-unix> ./btest
-Notice that you must rebuild
-btest
-each time you modify your
-bits.c
-file.
-You’ll find it helpful to work through the functions one at a time, testing each one as you go. You can
-use the
--f
-flag to instruct
-btest
-to test only a single function:
-unix> ./btest -f bitAnd
-You can feed it specific function arguments using the option flags
--1
-,
--2
-, and
--3
-:
-unix> ./btest -f bitAnd -1 7 -2 0xf
-Check the file
-README
-for documentation on running the
-b
-test program.
+* **btest:** This program checks the functional correctness of the functions in *bits.c*.  To build and use it, type the following two commands:
+<pre>
+	unix> make
+	unix> ./btest
+</pre>
+
+	* Notice that you must rebuild *btest* each time you modify your *bits.c* file.
+	* You’ll find it helpful to work through the functions one at a time, testing each one as you go. You can use the *-f* flag to instruct *btest* to test only a single function:
+		<pre>
+			unix> ./btest -f bitAnd
+		</pre>
+	* You can feed it specific function arguments using the option flags *-1*, *-2*, and *-3*:
+		<pre>
+			unix> ./btest -f bitAnd -1 7 -2 0xf
+		</pre>
+	* Check the file *README* for documentation on running the *btest* program.
 
-dlc
-:
-This is a modified version of an ANSI C compiler from the MIT CILK group that you can use
-to check for compliance with the coding rules for each puzzle. The typical usage is:
-unix> ./dlc bits.c
-The program runs silently unless it detects a problem, such as an illegal operator, too many operators,
-or non-straightline code in the integer puzzles. Running with the
--e
-switch:
-unix> ./dlc -e bits.c
-causes
-dlc
-to print counts of the number of operators used by each function. Type
-./dlc -help
-for a list of command line options.
+* **dlc:** This is a modified version of an ANSI C compiler from the MIT CILK group that you can use to check for compliance with the coding rules for each puzzle. The typical usage is:
+<pre>
+	unix> ./dlc bits.c
+</pre>
+
+	* The program runs silently unless it detects a problem, such as an illegal operator, too many operators, or non-straightline code in the integer puzzles. Running with the *-e* switch:
+	<pre>
+		unix> ./dlc -e bits.c
+	</pre>
+
+	* causes *dlc* to print counts of the number of operators used by each function. Type *./dlc -help* for a list of command line options.
 
-driver.pl
-:
-This is a driver program that uses
-btest
-and
-dlc
-to compute the correctness and
-performance points for your solution. It takes no arguments:
-unix> ./driver.pl
-Your instructors will use
-driver.pl
-to evaluate your solution.
-The default
-driver.pl
-script uses simple tests to check if your code is likely correct. A more com-
-prehensive test is to involve
-driver.pl -b
-, which will use a
-BDD
-library to
-prove
-that your code
-handles all cases.  This is what the I’ll likely use for grading, but this can be more time consuming.
-You should be fine just using
-driver.pl
-without the
--b
-flag for testing.
-4
-6  Handin Instructions
-Upload your
-bits.c
-file to Turnin by the due date. You can upload your file multiple times, and
-we encourage you upload often so you don’t run into problems at the last minute or lose your
-work.
-7  Advice
+* **driver.pl:** This is a driver program that uses *btest* and *dlc* to compute the correctness and performance points for your solution. It takes no arguments:
+<pre>
+	unix> ./driver.pl
+</pre>
+	* Your instructors will use *driver.pl* to evaluate your solution.
+	* The default *driver.pl* script uses simple tests to check if your code is likely correct. A more comprehensive test is to involve *driver.pl -b*, which will use a **BDD** library to *prove* that your code handles all cases.  This is what the I’ll likely use for grading, but this can be more time consuming. You should be fine just using *driver.pl* without the *-b* flag for testing.
+
+##  Handin Instructions
+Upload your *bits.c* file to Turnin by the due date. You can upload your file multiple times, and we encourage you upload often so you don’t run into problems at the last minute or lose your work.
+
+##Advice
 
-Don’t include the
-<stdio.h>
-header file in your
-bits.c
-file, as it confuses
-dlc
-and results in
-some non-intuitive error messages.  You will still be able to use
-printf
-in your
-bits.c
-file for
-debugging without including the
-<stdio.h>
-header, although
-gcc
-will print a warning that you
-can ignore.
+* Don’t include the *<stdio.h>* header file in your *bits.c* file, as it confuses *dlc* and results in some non-intuitive error messages.  You will still be able to use *printf* in your *bits.c* file for debugging without including the *<stdio.h>* header, although *gcc* will print a warning that you can ignore.
 
-The
-dlc
-program enforces a stricter form of C declarations than is the case for C++ or that is enforced
-by
-gcc
-. In particular, any declaration must appear in a block (what you enclose in curly braces) before
-any statement that is not a declaration. For example, it will complain about the following code:
-int foo(int x)
-{
-int a = x;
-a
-*
-= 3;     /
-*
-Statement that is not a declaration
-*
-/
-int b = a;  /
-*
-ERROR: Declaration not allowed here
-*
-/
-b
-*
-= a;     // ERROR -- this comment style causes errors
-}
-8  The “Beat the Prof” Contest
-For fun, we’re offering an optional “Beat the Prof” contest that allows you to compete with other students
-and the instructor to develop the most efficient puzzles. The goal is to solve each Data Lab puzzle using the
-fewest number of operators. Students who match or beat the instructor’s operator count for each puzzle are
-winners!
+* The *dlc* program enforces a stricter form of C declarations than is the case for C++ or that is enforced by *gcc*. In particular, any declaration must appear in a block (what you enclose in curly braces) before any statement that is not a declaration. For example, it will complain about the following code:
+<pre>
+	int foo(int x)
+	    {
+	      int a = x;
+	      a *= 3;     /* Statement that is not a declaration */
+	      int b = a;  /* ERROR: Declaration not allowed here */
+	      b *= a;     // ERROR -- this comment style causes errors
+	}
+</pre>
+
+##The “Beat the Prof” Contest
+For fun, we’re offering an optional “Beat the Prof” contest that allows you to compete with other students and the instructor to develop the most efficient puzzles. The goal is to solve each Data Lab puzzle using the fewest number of operators. Students who match or beat the instructor’s operator count for each puzzle are winners!
+
 To submit your entry to the contest, type:
-unix> ./driver.pl -u ‘‘Your Nickname’’
-Nicknames  are  limited  to  35  characters  and  can  contain  alphanumerics,  apostrophes,  commas,  periods,
-dashes, underscores, and ampersands.  You can submit as often as you like.  Your most recent submission
-will appear on a real-time scoreboard, identified only by your nickname.  You can view the scoreboard by
-pointing your browser at
-http://csci540.bryancdixon.com:8080
-5
+<pre>
+	unix> ./driver.pl -u ‘‘Your Nickname’’
+</pre>
+
+Nicknames are limited to 35 characters and can contain  alphanumerics, apostrophes, commas, periods, dashes, underscores, and ampersands. Nicknames should not be offensive or crude. You can submit as often as you like. Your most recent submission will appear on a real-time scoreboard, identified only by your nickname. You can view the scoreboard by pointing your browser at:
+
+http://bryancdixon.com:8080
