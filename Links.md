@@ -15,7 +15,7 @@
 * [Atom Editor](https://atom.io/) - Free "hackable" text editor from GitHub. Should be installed on the lab machines as well.
 
 ##[Moodle](https://moodle.csuchico.edu)
-I'll be using a Moodle page for this course this semester. Moodle will provide a mechanism for occasional quiz questions related to the material in the course. Additionally, enrolling in the course on Moodle will enroll you in the class's Piazza Discussion Board. A link to Piazza is on the class Moodle page.
+I'll be using a Moodle page for this course this semester. Moodle will provide a mechanism for occasional quiz questions related to the material in the course. It will also be used to hold the grades for the assignments. Additionally, enrolling in the course on Moodle will enroll you in the class's Piazza Discussion Board. A link to Piazza is on the class Moodle page.
 
 ###Piazza Discussion Board
 We will be using Piazza for class discussion. The system is highly catered to getting you help fast and efficiently from classmates and myself. Rather than emailing questions directly to me, I encourage you to post your general questions on Piazza. Any questions that could violate the cheating policy if asked should be emailed directly to me. If you have any problems or feedback for the developers, email team@piazza.com.
