@@ -72,9 +72,9 @@ I will routinely post the grading spreadsheet (Will be in google drive folder). 
 * Practice Problems 5% (If non exist then will become part of Programming Projects percentage)
 * Lecture Attendance can improve/lower your grade (see above)
 
-###Project Grading Meetings/MOSS
+###Project Grading Meetings
 
-I'm going to try and get Stanford's MOSS system running to test your code against in this course. As such any students who fail to pass the MOSS checks will be required to meet with me for detailed interviews about the assignments.
+I will be testing your project submissions for code plagiarism and any of you who fail these tests will be required to meet with me for detailed interviews about the assignments. If is apparent you didn't do any of the work I reserve the right to treat your submission as a violation of the Honesty Policy.
 
 
 ###CSCI640 Readings/Questions
