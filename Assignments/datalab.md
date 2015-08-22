@@ -68,6 +68,7 @@ The assignment is scored in two parts - you will receive 60 percent of the overa
 Your correctness score will be computed out of a maximum of 62 points based on the following distribution:
 
 **34 of 62 points** Correctness points (correct output)
+
 **28 of 62 points** Performance points (not exceeding the maximum operations)
 
 *Correctness points.* The 14 puzzles you must solve have been given a difficulty rating between 1 and 4, such that their weighted sum totals to 34.  We will evaluate your functions using the *btest* program, which is described in the next section. You will get full credit for a puzzle if it passes all of the tests performed by *btest*, and no credit otherwise.
@@ -82,7 +83,7 @@ You can receive up to 10% extra credit for this assignment by completing all of 
 We have included some autograding tools in the handout directory — *btest*, *dlc*, and *driver.pl* — to help you check the correctness of your work.
 
 Note that the autograding script produces a report about ’points’ – this doesn’t align with what we’ve described above (which is what holds). This happens in part because of the presence of the extra problems.
-
+
 * **btest:** This program checks the functional correctness of the functions in *bits.c*.  To build and use it, type the following two commands:
 <pre>
 	unix> make
@@ -99,7 +100,7 @@ Note that the autograding script produces a report about ’points’ – this d
 			unix> ./btest -f bitAnd -1 7 -2 0xf
 		</pre>
 	* Check the file *README* for documentation on running the *btest* program.
-
+
 * **dlc:** This is a modified version of an ANSI C compiler from the MIT CILK group that you can use to check for compliance with the coding rules for each puzzle. The typical usage is:
 <pre>
 	unix> ./dlc bits.c
@@ -111,7 +112,7 @@ Note that the autograding script produces a report about ’points’ – this d
 	</pre>
 
 	* causes *dlc* to print counts of the number of operators used by each function. Type *./dlc -help* for a list of command line options.
-
+
 * **driver.pl:** This is a driver program that uses *btest* and *dlc* to compute the correctness and performance points for your solution. It takes no arguments:
 <pre>
 	unix> ./driver.pl
@@ -123,9 +124,8 @@ Note that the autograding script produces a report about ’points’ – this d
 Upload your *bits.c* file to Turnin by the due date. You can upload your file multiple times, and we encourage you upload often so you don’t run into problems at the last minute or lose your work.
 
 ##Advice
-
 * Don’t include the *<stdio.h>* header file in your *bits.c* file, as it confuses *dlc* and results in some non-intuitive error messages.  You will still be able to use *printf* in your *bits.c* file for debugging without including the *<stdio.h>* header, although *gcc* will print a warning that you can ignore.
-
+
 * The *dlc* program enforces a stricter form of C declarations than is the case for C++ or that is enforced by *gcc*. In particular, any declaration must appear in a block (what you enclose in curly braces) before any statement that is not a declaration. For example, it will complain about the following code:
 <pre>
 	int foo(int x)
