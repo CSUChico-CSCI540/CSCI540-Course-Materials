@@ -1,6 +1,6 @@
 #CSCI540 links
 
-* [Google Drive Shared Folder](https://drive.google.com) - Shared folder of lecture slides, gradesheet, and other materials.
+* [Google Drive Shared Folder](https://goo.gl/RTBmy2) - Shared folder of lecture slides, gradesheet, and other materials.
 
 * [GitHub](https://github.com) - Version Control & Open Source Code Repository
 
