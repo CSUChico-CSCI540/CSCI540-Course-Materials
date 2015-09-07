@@ -14,18 +14,18 @@ as CSCI540 and has all the other same assignments.</p>
 	<tr>
 		<th align="left" width="125" valign="top">1</th>
 		<th align="left" width="400"><a href="http://www.bryancdixon.com/site_media/Fall2014/CSCI640/machos.pdf">Rashid, Richard, et al. <br>"Mach: a foundation for open systems [operating systems]."<br> Workstation Operating Systems, 1989., <br>Proceedings of the Second Workshop on. IEEE, 1989.</a></th>
-		<th align="left" width="400" valign="top"><a href="">Mach Questions</a></th>
+		<th align="left" width="400" valign="top"><a href="http://goo.gl/forms/teoUPeOh4n">Mach Questions</a></th>
 		<!--<th align="left">Grades</th>-->
 	</tr>
 	<tr>
 		<th align="left" width="125" valign="top">2</th>
 		<th align="left" width="400"><a href="http://www.bryancdixon.com/site_media/Fall2014/CSCI640/unix.pdf">Ritchie, Dennis M., and Ken Thompson. <br>"The UNIX time-sharing system." <br>Communications of the ACM 26.1 (1983): 84-89.</a></th>
-		<th align="left" width="400" valign="top"><a href="">Unix Time-Sharing Questions</a></th>
+		<th align="left" width="400" valign="top"><a href="http://goo.gl/forms/bFlCrTehGP">Unix Time-Sharing Questions</a></th>
 	</tr>
     <tr>
 		<th align="left" width="125" valign="top">3</th>
 		<th align="left" width="400"><a href="http://www.bryancdixon.com/site_media/Fall2014/CSCI640/vaxvms.pdf">Kronenberg, Nancy P., Henry M. Levy, and William D. Strecker. <br>"VAXcluster: a closely-coupled distributed system." <br>ACM Transactions on Computer Systems (TOCS) 4.2 (1986): 130-146.</a></th>
-		<th align="left" width="400" valign="top"><a href="">VAX/VMS Questions</a></th>
+		<th align="left" width="400" valign="top"><a href="http://goo.gl/forms/ERf4J3K0E7">VAX/VMS Questions</a></th>
 	</tr>
 	<tr>
 		<th align="left" width="125" valign="top">4</th>
