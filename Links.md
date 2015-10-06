@@ -14,6 +14,8 @@
 
 * [Atom Editor](https://atom.io/) - Free "hackable" text editor from GitHub. Should be installed on the lab machines as well.
 
+* [Practice Midterm](https://github.com/CSUChico-CSCI540/CSCI540-Course-Materials/raw/master/practice_exams/midtermpractice.pdf) - Practice midterm
+
 ##[Moodle](https://moodle.csuchico.edu)
 I'll be using a Moodle page for this course this semester. Moodle will provide a mechanism for occasional quiz questions related to the material in the course. It will also be used to hold the grades for the assignments. Additionally, enrolling in the course on Moodle will enroll you in the class's Piazza Discussion Board. A link to Piazza is on the class Moodle page.
 
