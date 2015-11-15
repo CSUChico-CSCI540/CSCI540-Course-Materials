@@ -65,21 +65,21 @@ as CSCI540 and has all the other same assignments.</p>
 	<tr>
 		<th align="left" width="125" valign="top">11</th>
 		<th align="left" width="400"><a href="http://www.bryancdixon.com/site_media/Fall2014/CSCI640/janus-usenix96.pdf">Goldberg, Ian, et al. <br>"A secure environment for untrusted helper applications: Confining the wily hacker." <br>Proceedings of the 1996 USENIX Security Symposium. Vol. 19. 1996.</a></th>
-		<th align="left" width="400" valign="top"><a href="">Janus Questions</a></th>
+		<th align="left" width="400" valign="top"><a href="http://goo.gl/forms/dhUUrEhvLd">Janus Questions</a></th>
 	</tr>
 	<tr>
 		<th align="left" width="125" valign="top">12</th>
 		<th align="left" width="400"><a href="http://www.bryancdixon.com/site_media/Fall2014/CSCI640/RAID84.pdf">Chen, Peter M., et al. <br>"RAID: High-performance, reliable secondary storage." <br>ACM Computing Surveys (CSUR) 26.2 (1994): 145-185.</a></th>
-		<th align="left" width="400" valign="top"><a href="">RAID Questions</a></th>
+		<th align="left" width="400" valign="top"><a href="http://goo.gl/forms/JUChNzGDzK">RAID Questions</a></th>
 	</tr>
 	<tr>
 		<th align="left" width="125" valign="top">13</th>
 		<th align="left" width="400"><a href="http://www.bryancdixon.com/site_media/Fall2014/CSCI640/gfs.pdf">Ghemawat, Sanjay, Howard Gobioff, and Shun-Tak Leung. <br>"The Google file system." <br>ACM SIGOPS Operating Systems Review. Vol. 37. No. 5. ACM, 2003.</a></th>
-		<th align="left" width="400" valign="top"><a href="">GFS Questions</a></th>
+		<th align="left" width="400" valign="top"><a href="http://goo.gl/forms/16HQrQrcPP">GFS Questions</a></th>
 	</tr>
 	<tr>
 		<th align="left" width="125" valign="top">14</th>
 		<th align="left" width="400"><a href="http://www.bryancdixon.com/site_media/Fall2014/CSCI640/bigtable.pdf">Chang, F., et al. <br>"Bigtable: A distributed structured data storage system." <br>7th OSDI. 2006.</a></th>
-		<th align="left" width="400" valign="top"><a href="">Big Table Questions</a></th>
+		<th align="left" width="400" valign="top"><a href="http://goo.gl/forms/wPLBggkvv9">Big Table Questions</a></th>
 	</tr>
 </table>
